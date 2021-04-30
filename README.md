@@ -109,6 +109,9 @@ welcher beim Kompilieren gesetzte Makros zu System Informationen ausliest
 und für das Schreiben in eine Datei aufbereitet.
 * `./system_specs/system_specs.h`: Header-Datei zu system_specs.c
 
+<br />
+<br />
+
 **/results/\<CPU-Modell>/**: Enthält die Ergebnisse der Messungen. Alle Daten werden automatisiert
 in einen Ordner, der nach dem CPU-Modell benannt ist, abgelegt.
 <br />
