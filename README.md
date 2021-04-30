@@ -82,11 +82,15 @@ Analyseprogramm:<br />
 fork. Wird vom Analyseprogramm aufgerufen.
 * `./analyse/testfile.txt`: Textdatei, die beim Aufruf der Systemcalls open, read und close
 zur Messung der Performance verwendet wird.
+<br />
+
 Evaluationsprogramm:
 * `./eval/eval.c`: Programmcode zur Aufbereitung der Messungen.
 * `./eval/eval.h`: Header-Datei zum Programmcode zur Aufbereitung der Messungen.
 * `./eval/statistics.h`: Header-Datei, welche Programmcode zur Berechnung von Varianz
 und Standardabweichung enthält. Wird vom Evaluationsprogramm verwendet.
+<br />
+
 Veränderung von Bootparametern:
 * `./grub_settings/grub_kpti`: Textdatei, welche die Standard Grub-Konfiguration (mit KPTI)
 zum Booten enthält. Wird vom Shell-Skript s_grub_kpti.sh verwendet.
@@ -97,6 +101,8 @@ s_grub_nopti.sh verwendet.
 mit KPTI herstellt und das Gerät Neustartet.
 * `./grub_settings/s_grub_nopti.sh`: Shell-Skript, welches die Standard-Boot-Konfiguration
 ohne KPTI herstellt und das Gerät Neustartet.
+<br />
+
 Auslesen von System Spezifikationen:
 * `./system_specs/system_specs.c`: Wird vom Analyseprogramm aufgerufen. Enthält Programmcode,
 welcher beim Kompilieren gesetzte Makros zu System Informationen ausliest
@@ -105,6 +111,8 @@ und für das Schreiben in eine Datei aufbereitet.
 
 **/results/\<CPU-Modell>/**: Enthält die Ergebnisse der Messungen. Alle Daten werden automatisiert
 in einen Ordner, der nach dem CPU-Modell benannt ist, abgelegt.
+<br />
+
 System Spezifikationen:
 * `./system_specs.txt`: Enthält die ausgelesenen System Spezifikationen des Geräts
 Messergebnisse zur Performance von Systemcalls:
@@ -116,11 +124,15 @@ ohne KPTI.
 der letzten maximal fünf Analysedurchläufe unter KPTI.
 * `./measurements-syscalls/last_five_avg_kpti.csv`: Enthält die Durchschnittsmesswerte
 der letzten maximal fünf Analysedurchläufe ohne KPTI.
+<br />
+
 Messergebnisse zur TLB Belegung:
 * `./measurements-tlb/tlb_measurement_kpti<1-5>.csv`: Enthält die Messwerte des jeweiligen
 Analysedurchlaufs unter KPTI.
 * `./measurements-tlb/tlb_measurement_nopti<1-5>.csv`: Enthält die Messwerte des jeweiligen
 Analysedurchlaufs ohne KPTI.
+<br />
+
 Evaluationsergebnisse:
 * `./eval/*`: Enthält Graphen und Tabellen zu den Messergebnissen, sowie eine Zusammenfassung
 aller einzelnen TLB Messungen jeweils mit und ohne kpti.
